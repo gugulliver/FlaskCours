@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */html {
+ font-family:sans-serif;
+ line-height:1.15;
+ -ms-text-size-adjust:100%;
+ -webkit-text-size-adjust:100%
+}
+
+/* the colors are set here*/
+body{
+    --nav-color: rgb(4, 149, 193);
+    --text-color1:#e9fffa;
+    --sec-color: rgba(94, 165, 220, 0.946);
+    --main-text-color: rgb(211, 211, 233);
+    --header-color:rgb(89, 126, 181);
+    --iceblue:rgb(106, 162, 240);
+    --background: rgb(89, 126, 181);
+
+  }
+
+  /* basic requierement*/
+body {
+ margin:0;
+ padding:0;
+ background-color: var(--background);
+}
+
+article,aside,footer,header,nav,section {
+ display:flex
+}
+
+/* */
+
+
+/* header nav bar */
+    #main-nav-bar{
+        position: fixed;
+        width: 100%;
+        background: var(--nav-color);
+        z-index: 2;
+    }
+    nav, div{
+        justify-content: flex-end;
+    }
+    a{
+        color: var(--text-color1);
+        margin-right: 1em;
+        }
+
+    .navbar-collapse{
+    justify-content: flex-end;
+    }
+
+
+/* page */
+.page{
+    background-color:var(--sec-color) ;
+    margin-bottom: 30pt;
+}
+
+.block{
+    z-index: 1;
+    text-align:static;
+    background:var(--iceblue) ;
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0;
+}
+
+.shadow, .page{
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+.hidden1{
+    visibility: hidden;
+}
+
+
+/* <first block display> */
+
+    #presentation{
+        width: 100%;
+        top: 0%;
+        position: relative;
+        color: var(--text-color1);
+    }
+
+    #presentation h1{
+
+            padding-top:5%;
+            font-size: 3em;
+    }
+     #moto{
+            margin-bottom: 30pt;
+    }
+
+    /* <background first slide> */
+        #imagePresentation{
+            left: 0;
+            z-index: 0;
+            position: absolute;
+            height: 100%;
+            width: 70%;
+            overflow-wrap: normal;
+            background-image: url("../images/norway-doomsday-vault-panos.jpg");
+            background-size: cover;
+        }
+        #imagePresentationFade{
+            right: 0;
+            z-index: 0;
+            position: absolute;
+
+            background: linear-gradient(to right, transparent ,var(--iceblue) 50%);
+            width: 70%;
+            height: 100%; 
+        }
+    /* </background first slide> */
+
+    #companyID{
+        text-align: center;
+        margin-left: -15%;
+        visibility: visible;
+        font-size: 1.6em;
+        z-index: 2;
+    }
+
+
+        #presentation #description{
+            text-align: left;
+
+            overflow-wrap: normal;
+            position: relative;
+
+            padding: 2%;
+            margin-left: 45%;
+        }
+
+
+    /* <four buttons display> */
+
+            #buttonContainer{
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+
+            }
+            #buttonContainer .row{
+                width: 70%;
+
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .col-sm-2{
+                display: flex;
+                flex-direction: column;
+
+                margin: 30pt;
+                margin-left: 30pt;
+                margin-right: 30pt;
+                padding-left: 0;
+                width: 140pt;
+            }
+
+            .umptyImage{
+                background-color: var(--main-text-color);
+                width:140pt;
+                height: 100pt;
+            }
+
+     /* </four buttons display> */
+
+/* </first block display> */
+
+/* <second block display> */
+
+    #page2{
+        padding: 1pt;
+        font-size: 1.5em;
+    }
+
+    .article{
+        border-radius: 3pt;
+        display: flex;
+        overflow: auto;
+        text-align: left;
+
+        padding: 10pt;
+        margin: 3%;
+
+        background-color: rgba(11, 14, 99, 0.25);
+    }
+
+    .article text{
+        padding : 15pt;
+        color: var(--main-text-color);
+
+        margin : auto; 
+    }
+
+    .article img{
+        min-width: 100pt;
+        max-width: 100pt;
+        display: block;
+        margin: auto;
+    }
+
+    /* </second block display> */

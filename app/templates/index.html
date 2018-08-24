@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block content %}
+   
+            <div class="page" id="page1">
+
+                <div class="block" id=presentation>
+                    <div id=imagePresentation> </div>
+                            <!-- <img src="images/norway-doomsday-vault-panos.jpg" class="rounded float-left" class="img-fluid" alt="svalbard seed vault">-->
+                    <div id=imagePresentationFade></div>
+                        
+
+                    <div id="tablette">
+
+                        <div id ="description">
+                                <div id="companyID">
+                                    <h1 title="temporary name">IWill</h1>
+                                    <h2 class="text-*-center" id ="moto">moto ("through time and space")</h2>
+                                </div> 
+                            <text >
+                                    You want to create a digital inheritance,
+                                    to transmit with certainty memories through time to your relatives,
+                                    families, loved ones?<br /> This app give you this possibility! You can add data to our storage
+                                    and we will give it to anyone you indicate us and with any conditions  
+                                    that you set,<br /> should they wait until there majority, there wedding or even 
+                                    there birth  we will be there to inform them of your will and give them what you wanted.
+                            </text>
+                        </div>  
+                        
+                        <div class="container-fluid bg-4 text-center" id="buttonContainer">
+                            <div class="row">
+                                <div class="colonne">
+                                    <div class="col-sm-2 shadow">
+                                        <div class="umptyImage .img-responsive"></div>
+                                        <p>Relative</p>
+                                    </div>
+                                    <div class="col-sm-2 shadow">
+                                        <div class="umptyImage .img-responsive"></div>
+                                        <p>Data</p>
+                                    </div>
+                                </div>
+                                <div class="colonne">
+                                    <div class="col-sm-2 shadow">
+                                        <div class="umptyImage .img-responsive"></div>
+                                        <p>Events</p>
+                                    </div>
+                                    <div class="col-sm-2 shadow">
+                                        <div class="umptyImage .img-responsive"></div>
+                                        <p>Assets</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+            <div class="page"  id="page2">
+                    <!--  from DB ...  -->
+                <div id="event">
+                    <div class="article shadow">
+                        <img src="{{ url_for('static', filename='images/workInProgress.png') }}"  class="img-fluid" alt="work in progress">
+                        <text>
+                            This space can be used to display news on the App, like update description,add-on...
+                            Or to present important event from the account eg: receving or well recived asset, incoming event, last modification and other.                            </text>
+                        </div> 
+                    <div class="article shadow">
+                        <img src="{{ url_for('static', filename='images/students.png') }}"  class="img-fluid" alt="students">
+                        <text>
+                            The Last update allowed you to set a graduation as an event, if you want to reward a student
+                            you can lock some data with us and inform us of the degree that he is intendeed,
+                            as soon as his school publicate the result this lock is lift.
+                        </text>
+                    </div>    
+                </div>
+            </div>
+
+        </main>
+
+
+   <!-- <script type="text/javascript" src='js/main.js'></script> -->
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    {% endblock %}

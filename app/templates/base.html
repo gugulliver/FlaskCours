@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<head>
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>IWill test</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,500,600" rel="stylesheet">
+		<!--
+		CSS
+		-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-theme.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/imageManager.css') }}">
+
+        <link rel="stylesheet"  media="screen and (max-width: 900px)"  href="{{ url_for('static', filename='css/Mmin.css') }}">
+        <link rel="stylesheet"  media="screen and (max-width: 1656px)and (min-width: 900px)"  href="{{ url_for('static', filename='css/Mmint.css') }}">
+
+    </head>
+
+    <body>
+        <main id="M">
+
+                    <nav class="navbar-fixed-top navbar shadow" id ="main-nav-bar">
+                        <a class=" p-3 mb-5  navbar-brand hidden1" id="nameMin" href="/index">IWill</a>
+                        <a class=" p-3 mb-5  navbar-brand" id="home"href="/index">Home</a>  
+                    <div class="collapse navbar-collapse "></div>
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="/login">Account</a>
+                            </li>
+                            <li>
+                                <a href="#">About us</a>
+                            </li>
+                        </ul>   
+                    </div>
+            </nav>
+
+
+            {% block content %}{% endblock %}
+
+        </main>
+    </body>

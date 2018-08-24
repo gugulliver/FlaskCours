@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="page" id="page1">
+
+        <div class="block" id=presentation>
+           <!-- <div id=imagePresentation> </div>-->
+                    <!-- <img src="images/norway-doomsday-vault-panos.jpg" class="rounded float-left" class="img-fluid" alt="svalbard seed vault">-->
+            <div id=imagePresentationFade></div>
+                
+
+            <div id="tablette">
+
+                <div id ="description">
+                        <div id="companyID">
+                                <h1 title="temporary name"></h1>
+                            </div> 
+                    <text >
+                           Choose the best mean for you to identify yourself, we proposed some eID<br /> as prent in the  CEF Digital Connectiong Europe, and some other country.
+                            <br /> All this autentification are secured by national agencies to there citizens.
+                        <h1>Sign In</h1>
+                        <form action="" method="post" novalidate>
+                            {{ form.hidden_tag() }}
+                            <p>
+                                {{ form.username.label }}<br>
+                                {{ form.username(size=32) }}
+                            </p>
+                            <p>
+                                {{ form.password.label }}<br>
+                                {{ form.password(size=32) }}
+                            </p>
+                            <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+                            <p>{{ form.submit() }}</p>
+                        </form>
+                    
+                        </text>
+                </div>  
+                
+                <div class="container-fluid bg-4 text-center" id="buttonContainer">
+                    <div class="row">
+                        <div class="colonne">
+                            <div class="col-sm-2 shadow">
+                                <img src="{{ url_for('static', filename='images/europeanGay.jpg') }}" class="umptyImage .img-responsive euro" alt="European eID tag"></img> <!-- "images/logo-eu.png" -->
+                                <p>Conect with National eID</p>
+                            </div>
+                            <div class="col-sm-2 shadow">
+                                <img src="{{ url_for('static', filename='images/biometric2.png') }}" class="umptyImage .img-responsive biom" alt="biometric tag"></img>
+                                <p>Biometric Recognition</p>
+                            </div>
+                        </div>
+                        <div class="colonne">
+                            <div class="col-sm-2 shadow">
+                                <div class="umptyImage .img-responsive"></div>
+                                <p>Events</p>
+                            </div>
+                            <div class="col-sm-2 shadow">
+                                <div class="umptyImage .img-responsive"></div>
+                                <p>Assets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            
+        </div>
+    </div>
+
+    
+{% endblock %}

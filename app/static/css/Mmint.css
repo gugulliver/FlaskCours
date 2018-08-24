@@ -1,0 +1,21 @@
+
+
+
+#tablette{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#presentation #description{
+    margin: 5%;
+    margin-left:0;
+}
+#presentation h1{
+    padding-top: 0;
+}
+
+.col-sm-2{
+    width: 0.7;
+    margin: 25pt;
+}
+

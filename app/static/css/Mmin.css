@@ -1,0 +1,100 @@
+
+
+#companyID h1{
+    display: none;
+}
+#home{
+    visibility: hidden;
+}
+
+
+#companyID, #moto{
+    position: relative;
+    text-align: center;
+    padding:0;
+    margin-left: 0;
+    margin:0;
+
+}
+
+#nameMin{
+    visibility: visible;
+    display: block;
+    margin: auto;
+    padding: auto;
+    font-size: 5em;
+
+}
+
+.page{
+    margin-bottom: 12pt;
+}
+#page2{
+    padding-top: 10pt;
+}
+
+#main-nav-bar{
+    margin-left: 0pt;
+}
+
+#presentation #description{
+    text-align: justify;
+
+    overflow-wrap: normal;
+    position: relative;
+    
+    padding: 0pt;
+    margin : 15pt;
+
+    padding-top: 5%;
+    margin-left: 5%;
+}
+#presentation, #tablette{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#imagePresentation{
+    margin-left:0pt;
+    width: 100%;
+    background-size: cover;
+}
+#imagePresentationFade{
+    position: absolute;
+    background: linear-gradient(to bottom, transparent ,var(--iceblue) 80%);
+    width: 100%; 
+    bottom: 0;
+}
+
+
+.row{
+    flex-wrap: wrap;
+}
+#buttonContainer, #buttonContainer .row{
+    width: 100%;
+    margin-top: 50pt;
+    padding: 0pt;
+}
+
+.article{
+    flex-direction: column;
+    overflow: initial;
+    text-align: justify;
+
+}
+.container, .article{
+padding-left: 0;
+padding-right: 0;
+margin-left: 0;
+margin-left: 0;
+}
+.article img{
+    min-width: 100pt;
+    max-width: 100pt;
+    display: block;
+    margin: auto;
+}
+.col-sm-2{
+    width: 0.7;
+    margin: 10pt;
+}
