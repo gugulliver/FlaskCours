@@ -5,7 +5,7 @@ from app.forms import LoginForm
 @app.route('/')
 @app.route('/index')
 def index():
-    user = {'username': 'Miguel'}
+    #user = {'username': 'Miguel'}
     return render_template('index.html', title='Home')
 
 
